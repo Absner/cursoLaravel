@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace raspaUneg\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

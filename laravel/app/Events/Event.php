@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Events;
+namespace raspaUneg\Events;
 
 abstract class Event
 {

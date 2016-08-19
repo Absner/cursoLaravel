@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace raspaUneg\Http\Controllers\Auth;
 
-use App\User;
+use raspaUneg\User;
 use Validator;
-use App\Http\Controllers\Controller;
+use raspaUneg\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 

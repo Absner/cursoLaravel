@@ -151,10 +151,10 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        raspaUneg\Providers\AppServiceProvider::class,
+        raspaUneg\Providers\AuthServiceProvider::class,
+        raspaUneg\Providers\EventServiceProvider::class,
+        raspaUneg\Providers\RouteServiceProvider::class,
 
     ],
 

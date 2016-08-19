@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Jobs;
+namespace raspaUneg\Jobs;
 
 use Illuminate\Bus\Queueable;
 
