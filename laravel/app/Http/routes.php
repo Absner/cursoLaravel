@@ -14,3 +14,19 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('holamundo', function(){
+	return "Hola mundo con rutas";
+});
+/* ejemplo para paso de parametros por URL*/
+
+Route::get('holamundo/{pais}', function($pais){
+	return "mi pais es: ".$pais;
+});
+/*utilizando un controlador en las vistas*/
+Route::get('controlador','controllerPrueba@index');
+
+/* Creando una ruta usando el resource para así tener disponibles diferentes metodos de una mismo controlador
+para que se cree nuestro controlador con sus metodos básico tecleamos en el terminal(consola) lo siguiente: php artisan make:controller nombre_del_controlador_a_crear --resource en nuestro caso es: controladorResource
+*/
+Route::resource('resource','controladorRestfull');

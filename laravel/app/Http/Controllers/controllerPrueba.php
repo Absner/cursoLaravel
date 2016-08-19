@@ -11,4 +11,8 @@ use Illuminate\Foundation\Auth\Access\AuthorizesResources;
 class controllerPrueba extends BaseController
 {
     use AuthorizesRequests, AuthorizesResources, DispatchesJobs, ValidatesRequests;
+
+    public function index(){
+    	return "paso de parametros exitoso";
+    }
 }
