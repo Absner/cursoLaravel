@@ -9,4 +9,9 @@ use raspaUneg\Http\Requests;
 class fromController extends Controller
 {
     //
+
+    public function index(){
+
+    	return view('index');
+    }
 }

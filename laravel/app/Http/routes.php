@@ -9,12 +9,12 @@
 | It's a breeze. Simply tell Laravel the URIs it should respond to
 | and give it the controller to call when that URI is requested.
 |
-*/
+*
 
-Route::get('/', function () {
-    return view('welcome');
+/*Route::get('/', function () {
+    return view('');
 });
-
+*/
 Route::get('holamundo', function(){
 	return "Hola mundo con rutas";
 });
@@ -24,7 +24,7 @@ Route::get('holamundo/{pais}', function($pais){
 	return "mi pais es: ".$pais;
 });
 /*utilizando un controlador en las vistas*/
-Route::get('controlador','controllerPrueba@index');
+Route::get('/','fromController@index');
 
 /* Creando una ruta usando el resource para así tener disponibles diferentes metodos de una mismo controlador
 para que se cree nuestro controlador con sus metodos básico tecleamos en el terminal(consola) lo siguiente: php artisan make:controller nombre_del_controlador_a_crear --resource en nuestro caso es: controladorResource
