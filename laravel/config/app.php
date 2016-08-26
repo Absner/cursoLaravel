@@ -155,6 +155,7 @@ return [
         raspaUneg\Providers\AuthServiceProvider::class,
         raspaUneg\Providers\EventServiceProvider::class,
         raspaUneg\Providers\RouteServiceProvider::class,
+        raspaUneg\Providers\runCalculo::class,
 
     ],
 

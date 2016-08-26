@@ -11,14 +11,14 @@ class operacionesElementales extends Command
      *
      * @var string
      */
-    protected $signature = 'command:name';
+    protected $signature = 'operacionesElementales';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Creando si comando para la prueba';
 
     /**
      * Create a new command instance.
@@ -38,5 +38,10 @@ class operacionesElementales extends Command
     public function handle()
     {
         //
+        $num_a= $this->ask("ingrese el primer digito: ");
+        $operacion= $this->ask("¿Que operacion matematica desea realizar? :");
+        $num_b= $this->ask("ingrese el segundo digito para completar la operacion: ");
+        $this->info("El digito ingresado fue: $num_a $operacion $num_b");
+
     }
 }
